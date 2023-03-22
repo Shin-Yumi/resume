@@ -1,17 +1,291 @@
-/* Error: expected "{".
- *    ,
- * 26 | /
- *    |  ^
- *    '
- *   style.scss 26:2  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 26 \2502  /\a    \2502   ^\a    \2575 \a   style.scss 26:2  root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans KR";
+  color: #605852;
 }
+
+body {
+  background: #d5e6f1;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.resume {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  overflow-x: hidden;
+  background-color: #fff8f0;
+  border-radius: 20px;
+}
+.resume > .inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.resume > .inner .profile {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 600px;
+}
+.resume > .inner .profile .profileImg {
+  width: 450px;
+  height: 100%;
+  margin-right: 50px;
+}
+.resume > .inner .profile .profileImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 40px;
+  object-fit: cover;
+}
+.resume > .inner .profile .profileDesc {
+  width: calc(100% - 500px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.resume > .inner .profile .profileDesc .profileTop {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.resume > .inner .profile .profileDesc .profileTop .name {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.resume > .inner .profile .profileDesc .profileTop .name span {
+  font-weight: 600;
+  text-transform: normal;
+}
+.resume > .inner .profile .profileDesc .profileTop .job {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+}
+.resume > .inner .profile .profileDesc .profileText .profileTit {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+.resume > .inner .profile .profileDesc .profileText > span {
+  position: relative;
+  display: inline-block;
+}
+.resume > .inner .profile .profileDesc .profileText > span::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  content: "";
+  background-color: #777;
+}
+.resume > .inner .profile .profileDesc .profileText .profileTxt {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.resume > .inner .resumeBox {
+  padding-top: 50px;
+}
+.resume > .inner .resumeBox > .inner {
+  display: flex;
+}
+.resume > .inner .resumeBox > .inner .rightSection {
+  margin-right: 20px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle {
+  width: 450px;
+  padding: 50px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle {
+  margin-bottom: 20px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle > h2 {
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle > span {
+  position: relative;
+  display: inline-block;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle > span::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  content: "";
+  background-color: #777;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list .box p {
+  font-size: 20px;
+  padding-top: 5px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list + .list {
+  padding-top: 30px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.edu {
+  border-radius: 40px 0 0 0;
+  background: rgb(255, 238, 213);
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .school {
+  font-weight: 600;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate {
+  border-radius: 0 40px 0 0;
+  background: rgb(255, 238, 213);
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateTitle {
+  font-weight: 600;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.activity {
+  border-radius: 0 40px 0 0;
+  background: rgb(255, 238, 213);
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.activity .activityTitle {
+  font-weight: 600;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.contact {
+  border-radius: 40px 0 0 0;
+  background: rgb(255, 238, 213);
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .conTitle {
+  font-weight: 600;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .socialList {
+  display: inline-block;
+  margin-right: 4px;
+  font-size: 20px;
+  line-height: 1;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle + .rArticle {
+  margin-top: 20px;
+}
+.resume > .inner .resumeBox > .inner .leftSection {
+  width: calc(100% - 470px);
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle {
+  width: 100%;
+  padding: 50px;
+  border-radius: 40px 0;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle {
+  margin-bottom: 20px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > h2 {
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > span {
+  position: relative;
+  display: inline-block;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > span::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  content: "";
+  background-color: #777;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project {
+  background: rgb(255, 238, 213);
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectList {
+  padding-top: 10px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectTitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
+  margin-bottom: 20px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite,
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF {
+  position: relative;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
+  display: block;
+  color: #06278b;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #06278b;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF {
+  margin-left: 16px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience {
+  background: rgb(255, 238, 213);
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList {
+  padding-top: 16px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exDate {
+  font-size: 14px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exProject {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exProject .exProList {
+  padding-top: 10px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exProject .exProList:first-of-type {
+  padding-top: 0;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exProject .exProTitle {
+  font-weight: 600;
+  font-size: 18px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle + .lArticle {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

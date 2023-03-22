@@ -8,10 +8,296 @@
   <title>이력서</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
 <body>
   <main class="resume">
+    <div class="inner">
+      <section class="profile">
+        <div class="profileImg">
+          <img src="img/유미프로필.jpeg" alt="프로필사진입니다">
+        </div>
+        <div class="profileDesc">
+          <div class="profileTop">
+            <h1 class="name">Shin <span>Yumi</span> </h1>
+            <h2 class="job">Front-end Developer</h2>
+          </div>
+
+          <div class="profileText">
+            <h3 class="profileTit">Profile</h3>
+            <span></span>
+            <p class="profileTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illo dolore aliquam
+              saepe, ullam veritatis ipsam perspiciatis consequuntur natus sit ad eos laboriosam corporis placeat
+              excepturi commodi laudantium provident non?</p>
+          </div>
+        </div>
+      </section>
+      <div class="resumeBox">
+        <div class="inner">
+          <section class="rightSection">
+            <article class="edu rArticle">
+              <div class="inner">
+                <div class="articleTitle">
+                  <h2>Education</h2>
+                  <span></span>
+                </div>
+                <ul class="eduLists lists">
+                  <li class="eduList list">
+                    <div class="eduBox box">
+                      <p class="eduDate">2015 - 2020</p>
+                      <p class="school">SahmYook University</p>
+                      <p class="major">environment Design</p>
+                    </div>
+                  </li>
+                  <li class="eduList list">
+                    <div class="eduBox box">
+                      <p class="eduDate">2013 - 2015</p>
+                      <p class="school">Wolgye High School</p>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </article>
+            <article class="certificate rArticle">
+              <div class="inner">
+                <div class="articleTitle">
+                  <h2>Certificate</h2>
+                  <span></span>
+                </div>
+                <ul class="certificateLists lists">
+                  <li class="certificateList list">
+                    <div class="certificateBox box">
+                      <p class="certificateDate">2021.09</p>
+                      <p class="certificateTitle">웹디자인기능사</p>
+                      <p class="certificateAgency">한국산업인력공단</p>
+                    </div>
+                  </li>
+                  <li class="certificateList list">
+                    <div class="certificateBox box">
+                      <p class="certificateDate">2019.11</p>
+                      <p class="certificateTitle">컬러리스트기사</p>
+                      <p class="certificateAgency">한국산업인력공단</p>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </article>
+            <article class="activity rArticle">
+              <div class="inner">
+                <div class="articleTitle">
+                  <h2>Activity</h2>
+                  <span></span>
+                </div>
+                <ul class="activityLists lists">
+                  <li class="activityList list">
+                    <div class="activityBox box">
+                      <p class="activityDate">2016 - 2016</p>
+                      <p class="activityTitle">초등돌봄교실 봉사활동</p>
+                      <p class="activityAgency">서울동행프로젝트</p>
+                    </div>
+                  </li>
+                  <li class="activityList list">
+                    <div class="activityBox box">
+                      <p class="activityDate">2016 - 2018</p>
+                      <p class="activityTitle">환경을 GREEN다(학과동아리)</p>
+                      <p class="activityAgency">삼육대학교 학과동아리</p>
+                    </div>
+                  </li>
+                  <li class="activityList list">
+                    <div class="activityBox box">
+                      <p class="activityDate">2019 - 2019</p>
+                      <p class="activityTitle">치즈샌드위치</p>
+                      <p class="activityAgency">삼육대학교 창업공모전 동아리</p>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </article>
+            <article class="contact rArticle">
+              <div class="inner">
+                <div class="articleTitle">
+                  <h2>Contact</h2>
+                  <span></span>
+                </div>
+                <ul class="contactLists lists">
+                  <li class="contactList list">
+                    <div class="contactBox box">
+                      <p class="conTitle">Phone</p>
+                      <p class="conPhone">010-8593-6539</p>
+                    </div>
+                  </li>
+                  <li class="contactList list">
+                    <div class="contactBox box">
+                      <p class="conTitle">Email</p>
+                      <p class="conPhone">tlsdbal0517@gmail.com</p>
+                    </div>
+                  </li>
+                  <li class="contactList list">
+                    <div class="contactBox box">
+                      <p class="conTitle">Social</p>
+                      <div class="socialLists">
+                        <a class="socialList" href="https://github.com/Shin-Yumi">github</a>
+                        <a class="socialList"
+                          href="https://painted-snowshoe-84d.notion.site/Front-end-Developer-cc9e3c1e16d14137af7f0f6bdc8922a2">notion</a>
+                        <a class="socialList" href="https://hafe-is-me.tistory.com/">tistory</a>
+                        <a class="socialList" href="https://hafe-is-me.tistory.com/">instagram</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </article>
+          </section>
+          <section class="leftSection">
+            <article class="lArticle project">
+              <div class="inner">
+                <div class="articleTitle">
+                  <h2>Project</h2>
+                  <span></span>
+                </div>
+                <ul class="lists projectLists">
+                  <li class="list projectList">
+                    <div class="box projectList">
+                      <p class="projectTitle">React Portfolio</p>
+                      <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugiat
+                        dignissimos, vero vel praesentium labore quisquam at velit debitis nobis, cum architecto eveniet
+                        animi ad magnam quas. Ratione, molestiae. Debitis!</p>
+                      <div class="projectLink">
+                        <p class="projectSite">
+                          <a href="https://shin-yumi.github.io/React-portfolio/#/">사이트 바로가기</a>
+                        </p>
+                        <p class="projectPDF">
+                          <a href="file/신유미 포트폴리오 작업 가이드.pdf" download="portfolio 작업 가이드 다운로드">
+                            작업 가이드 다운로드
+                          </a>
+                        </p>
+                      </div>
+
+                    </div>
+                  </li>
+                  <li class="list projectList">
+                    <div class="box projectList">
+                      <p class="projectTitle">Html version Portfolio</p>
+                      <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugiat
+                        dignissimos, vero vel praesentium labore quisquam at velit debitis nobis, cum architecto eveniet
+                        animi ad magnam quas. Ratione, molestiae. Debitis!</p>
+                      <div class="projectLink">
+                        <p class="projectSite">
+                          <a href="https://shin-yumi.github.io/frontend-portfolio/main.html">사이트 바로가기</a>
+                        </p>
+                        <p class="projectPDF">
+                          <a href="file/신유미 포트폴리오 작업 가이드.pdf" download="portfolio 작업 가이드 다운로드">
+                            작업 가이드 다운로드
+                          </a>
+                        </p>
+                      </div>
+
+                    </div>
+                  </li>
+                  <li class="list projectList">
+                    <div class="box projectList">
+                      <p class="projectTitle">Netflix Clone page (Next.js)</p>
+                      <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugiat
+                        dignissimos, vero vel praesentium labore quisquam at velit debitis nobis, cum architecto eveniet
+                        animi ad magnam quas. Ratione, molestiae. Debitis!</p>
+                      <div class="projectLink">
+                        <p class="projectSite">
+                          <a href="https://nextflix-sigma.vercel.app/">사이트 바로가기</a>
+                        </p>
+                        <p class="projectPDF">
+                          <a href="file/신유미 포트폴리오 작업 가이드.pdf" download="portfolio 작업 가이드 다운로드">
+                            작업 가이드 다운로드
+                          </a>
+                        </p>
+                      </div>
+
+                    </div>
+                  </li>
+                  <li class="list projectList">
+                    <div class="box projectList">
+                      <p class="projectTitle">NodeExpress, MongoDB로 CRUD 만들기</p>
+                      <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugiat
+                        dignissimos, vero vel praesentium labore quisquam at velit debitis nobis, cum architecto eveniet
+                        animi ad magnam quas. Ratione, molestiae. Debitis!</p>
+                      <div class="projectLink">
+                        <p class="projectSite">
+                          <a href="https://nextflix-sigma.vercel.app/">사이트 바로가기</a>
+                        </p>
+                        <p class="projectPDF">
+                          <a href="file/신유미 포트폴리오 작업 가이드.pdf" download="portfolio 작업 가이드 다운로드">
+                            작업 가이드 다운로드
+                          </a>
+                        </p>
+                      </div>
+
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </article>
+            <article class="lArticle experience">
+              <div class="inner">
+                <div class="articleTitle">
+                  <h2>Experience</h2>
+                  <span></span>
+                </div>
+                <ul class="lists exLists">
+                  <li class="list exList">
+                    <div class="box exbox">
+                      <p class="exDate">2022.07 - 2022.08 </p>
+                      <p class="exTitle">Emart everyday</p>
+                      <p class="exDesc">Publishing 외주</p>
+                    </div>
+                  </li>
+                  <li class="list exList">
+                    <div class="box exbox">
+                      <p class="exDate">2022.06 - 2022.07 </p>
+                      <p class="exTitle">Valbers</p>
+                      <p class="exDesc">기존 사이트 리뉴얼</p>
+                    </div>
+                  </li>
+                  <li class="list exList">
+                    <div class="box exbox">
+                      <p class="exDate">2022.01 - 2022.06</p>
+                      <p class="exTitle">(주)에이아트</p>
+                      <p class="exDesc">프론트엔드 개발 근무</p>
+                      <ul class="exProject">
+                        <li class="exProList">
+                          <p class="exProTitle">Vitis</p>
+                          <p class="exProSkill">Nuxt.js, swagger, bootstrap, gitLab</p>
+                          <p class="exWork">담당업무파트</p>
+                        </li>
+                        <li class="exProList">
+                          <p class="exProTitle">D-plot</p>
+                          <p class="exProSkill">Vue2, bootstrap, gitLab</p>
+                          <p class="exWork">담당업무파트</p>
+                        </li>
+                        <li class="exProList">
+                          <p class="exProTitle">그 외 이벤트성 페이지</p>
+                          <p class="exProSkill">Html, Scss, Javascript</p>
+                          <p class="exWork">담당업무파트</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </article>
+          </section>
+        </div>
+
+      </div>
+
+
+    </div>
+
 
   </main>
 </body>

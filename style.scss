@@ -9,6 +9,12 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'IBM Plex Sans KR';
+	color: #605852;
+}
+body {
+  background: #d5e6f1;
+  margin: 0 auto;
+  padding: 100px ;
 }
 ul,
 li {
@@ -21,7 +27,275 @@ a {
 // main scss
 .resume {
 	width: 100%;
-  height: 100%;
-	padding: 30px;
-/
+	height: 100%;
+	padding: 50px;
+	overflow-x: hidden;
+  background-color: #fff8f0;
+  border-radius: 20px;
+	> .inner {
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		.profile {
+			display: flex;
+			align-items: flex-end;
+			width: 100%;
+			height: 600px;
+			.profileImg {
+				width: 450px;
+				height: 100%;
+				margin-right: 50px;
+				img {
+					width: 100%;
+					height: 100%;
+					border-radius: 0 40px;
+					object-fit: cover;
+				}
+			}
+			.profileDesc {
+				width: calc(100% - 500px);
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				.profileTop {
+					width: 100%;
+					margin-bottom: 30px;
+					.name {
+						font-size: 50px;
+						line-height: 1;
+						font-weight: 400;
+						letter-spacing: 1.5px;
+						text-transform: uppercase;
+						margin-bottom: 10px;
+						span {
+							font-weight: 600;
+							text-transform: normal;
+						}
+					}
+					.job {
+						font-size: 24px;
+						font-weight: 300;
+						line-height: 1;
+					}
+				}
+
+				.profileText {
+					.profileTit {
+						font-size: 20px;
+						letter-spacing: 2px;
+						margin-bottom: 5px;
+						line-height: 1;
+					}
+					> span {
+						position: relative;
+						display: inline-block;
+						&::after {
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 50px;
+							height: 2px;
+							content: '';
+							background-color: #777;
+						}
+					}
+					.profileTxt {
+						margin-top: 10px;
+						font-size: 18px;
+						font-weight: 300;
+					}
+				}
+			}
+		}
+		.resumeBox {
+			padding-top: 50px;
+			> .inner {
+				display: flex;
+				.rightSection {
+					margin-right: 20px;
+					.rArticle {
+						width: 450px;
+						padding: 50px;
+
+						.articleTitle {
+							margin-bottom: 20px;
+							> h2 {
+								font-size: 24px;
+								color: #000;
+								font-weight: 600;
+								letter-spacing: 1px;
+								line-height: 1;
+							}
+							> span {
+								position: relative;
+								display: inline-block;
+								&::after {
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 50px;
+									height: 2px;
+									content: '';
+									background-color: #777;
+								}
+							}
+						}
+						.lists {
+							.list {
+								.box {
+									p {
+										font-size: 20px;
+										padding-top: 5px;
+									}
+								}
+							}
+							.list + .list {
+								padding-top: 30px;
+							}
+						}
+						&.edu {
+							border-radius: 40px 0 0 0;
+							background: rgb(255, 238, 213);
+							.school {
+								font-weight: 600;
+							}
+						}
+            &.certificate {
+              border-radius: 0 40px 0 0;
+							background: rgb(255, 238, 213);
+              .certificateTitle {
+                font-weight: 600;
+              }
+            }
+            &.activity {
+              border-radius: 0 40px 0 0;
+							background: rgb(255, 238, 213);
+              .activityTitle {
+                font-weight: 600;
+              }
+            }
+						&.contact {
+							border-radius: 40px 0 0 0;
+							background: rgb(255, 238, 213);
+							.conTitle {
+								font-weight: 600;
+							}
+							.socialList {
+								display: inline-block;
+								margin-right: 4px;
+								font-size: 20px;
+								line-height: 1;
+							}
+						}
+					}
+					.rArticle + .rArticle {
+						margin-top: 20px;
+					}
+				}
+				.leftSection {
+					width: calc(100% - 470px);
+					.lArticle {
+						width: 100%;
+						padding: 50px;
+						border-radius: 40px 0;
+						
+						.articleTitle {
+							margin-bottom: 20px;
+							> h2 {
+								font-size: 24px;
+								color: #000;
+								font-weight: 600;
+								letter-spacing: 1px;
+								line-height: 1;
+							}
+							> span {
+								position: relative;
+								display: inline-block;
+								&::after {
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 50px;
+									height: 2px;
+									content: '';
+									background-color: #777;
+								}
+							}
+						}
+            &.project {
+              background: rgb(255, 238, 213);
+              .projectList {
+                padding-top: 10px;
+              }
+              .projectTitle {
+                font-weight: 600;
+                margin-bottom: 10px;
+              }
+              .projectDesc {
+                margin-bottom: 20px;
+              }
+              .projectLink {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                .projectSite,
+                .projectPDF {
+                  position: relative;
+                  a {
+                    display: block;
+                    color: #06278b;
+                  }
+                  &::after {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: #06278b;
+                  }
+                }
+                .projectPDF {
+                  margin-left: 16px;
+                }
+              }
+            }
+            &.experience {
+              background: rgb(255, 238, 213);
+              .exList {
+                padding-top: 16px;
+              }
+              .exDate {
+                font-size: 14px;
+              }
+              .exTitle {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px;
+              }
+              .exProject {
+                padding-left: 20px;
+                padding-top: 10px;
+                .exProList {
+                  padding-top: 10px;
+                  &:first-of-type {
+                    padding-top: 0;
+                  }
+                }
+                .exProTitle {
+                  font-weight: 600;
+                  font-size: 18px;
+                }
+              }
+            }
+					}
+					.lArticle + .lArticle {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
 }
