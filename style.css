@@ -61,7 +61,7 @@ a {
 }
 .resume > .inner .profile .profileDesc .profileTop {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .resume > .inner .profile .profileDesc .profileTop .name {
   font-size: 50px;
@@ -101,8 +101,14 @@ a {
 }
 .resume > .inner .profile .profileDesc .profileText .profileTxt {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
+}
+.resume > .inner .profile .profileDesc .profileText .profileTxt span {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
 }
 .resume > .inner .resumeBox {
   padding-top: 50px;
@@ -141,7 +147,6 @@ a {
   background-color: #777;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list .box p {
-  font-size: 20px;
   padding-top: 5px;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list + .list {
@@ -151,22 +156,97 @@ a {
   border-radius: 40px 0 0 0;
   background: rgb(255, 238, 213);
 }
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .eduDate {
+  font-size: 12px;
+  font-weight: 300;
+}
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .school {
+  font-size: 20px;
   font-weight: 600;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .major {
+  font-size: 14px;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate {
   border-radius: 0 40px 0 0;
   background: rgb(255, 238, 213);
 }
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateDate {
+  font-size: 12px;
+  font-weight: 300;
+}
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateTitle {
+  font-size: 20px;
   font-weight: 600;
 }
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.activity {
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateAgency {
+  font-size: 14px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill {
   border-radius: 0 40px 0 0;
   background: rgb(255, 238, 213);
 }
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.activity .activityTitle {
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillEnv {
+  font-size: 14px;
   font-weight: 600;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillTitle {
+  font-size: 12px;
+  font-size: 300;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists {
+  padding-top: 10px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList {
+  padding: 5px 0;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .skillName {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .useName {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .useSkill {
+  font-size: 12px;
+  padding: 0;
+  color: #196da6;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .skillBar {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  border-radius: 50px;
+  background: rgb(220, 202, 176);
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .skillBar::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 90%;
+  height: 2px;
+  background-color: #196da6;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox + .skillBox {
+  padding-top: 5px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.js .skillBar::after {
+  width: 80%;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.react .skillBar::after {
+  width: 70%;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.vue .skillBar::after {
+  width: 70%;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.redux .skillBar::after {
+  width: 60%;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.ts .skillBar::after {
+  width: 40%;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact {
   border-radius: 40px 0 0 0;
@@ -178,7 +258,7 @@ a {
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .socialList {
   display: inline-block;
   margin-right: 4px;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle + .rArticle {
@@ -223,6 +303,7 @@ a {
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectTitle {
   font-weight: 600;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
@@ -260,29 +341,50 @@ a {
   background: rgb(255, 238, 213);
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList {
-  padding-top: 16px;
+  padding-top: 30px;
 }
-.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exDate {
-  font-size: 14px;
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox {
+  display: flex;
 }
-.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exTitle {
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox {
+  width: 30%;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox .exDate {
+  font-size: 12px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox .exTitle {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exProject {
-  padding-left: 20px;
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc {
+  width: 70%;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exText {
+  font-size: 14px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exPlugin {
+  margin-bottom: 10px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject {
   padding-top: 10px;
 }
-.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exProject .exProList {
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList {
   padding-top: 10px;
 }
-.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exProject .exProList:first-of-type {
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList:first-of-type {
   padding-top: 0;
 }
-.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exProject .exProTitle {
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .exProTitle {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .proText {
+  font-size: 12px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .proWork {
+  padding-top: 10px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle + .lArticle {
   margin-top: 20px;

@@ -12,9 +12,9 @@
 	color: #605852;
 }
 body {
-  background: #d5e6f1;
-  margin: 0 auto;
-  padding: 100px ;
+	background: #d5e6f1;
+	margin: 0 auto;
+	padding: 100px;
 }
 ul,
 li {
@@ -30,8 +30,8 @@ a {
 	height: 100%;
 	padding: 50px;
 	overflow-x: hidden;
-  background-color: #fff8f0;
-  border-radius: 20px;
+	background-color: #fff8f0;
+	border-radius: 20px;
 	> .inner {
 		width: 100%;
 		height: 100%;
@@ -60,7 +60,7 @@ a {
 				justify-content: flex-end;
 				.profileTop {
 					width: 100%;
-					margin-bottom: 30px;
+					margin-bottom: 100px;
 					.name {
 						font-size: 50px;
 						line-height: 1;
@@ -102,8 +102,15 @@ a {
 					}
 					.profileTxt {
 						margin-top: 10px;
-						font-size: 18px;
+						font-size: 14px;
 						font-weight: 300;
+
+						span {
+							display: inline-block;
+							padding-bottom: 10px;
+							font-size: 18px;
+							font-weight: 500;
+						}
 					}
 				}
 			}
@@ -145,7 +152,6 @@ a {
 							.list {
 								.box {
 									p {
-										font-size: 20px;
 										padding-top: 5px;
 									}
 								}
@@ -157,24 +163,123 @@ a {
 						&.edu {
 							border-radius: 40px 0 0 0;
 							background: rgb(255, 238, 213);
+							.eduDate {
+								font-size: 12px;
+								font-weight: 300;
+							}
 							.school {
+								font-size: 20px;
 								font-weight: 600;
 							}
+							.major {
+								font-size: 14px;
+							}
 						}
-            &.certificate {
-              border-radius: 0 40px 0 0;
+						&.certificate {
+							border-radius: 0 40px 0 0;
 							background: rgb(255, 238, 213);
-              .certificateTitle {
-                font-weight: 600;
-              }
-            }
-            &.activity {
-              border-radius: 0 40px 0 0;
+							.certificateDate {
+								font-size: 12px;
+								font-weight: 300;
+							}
+							.certificateTitle {
+								font-size: 20px;
+								font-weight: 600;
+							}
+							.certificateAgency {
+								font-size: 14px;
+							}
+						}
+						&.skill {
+							border-radius: 0 40px 0 0;
 							background: rgb(255, 238, 213);
-              .activityTitle {
-                font-weight: 600;
+							.skillEnv {
+								font-size: 14px;
+								font-weight: 600;
+							}
+							.skillTitle {
+								font-size: 12px;
+                font-size: 300;
+							}
+              .skillLists {
+                padding-top: 10px;
+                .skillList {
+                  padding: 5px 0;
+                  .skillBox {
+                    .skillName {
+                      font-size: 12px;
+                      margin-bottom: 10px;
+                    }
+                    .useName {
+                      font-size: 12px;
+                      margin-bottom: 5px;
+                    }
+                    .useSkill {
+                      font-size: 12px;
+                      padding: 0;
+                      color: #196da6;
+
+                    }
+                    .skillBar {
+                      position: relative;
+                      width: 100%;
+                      height: 2px;
+                      border-radius: 50px;
+                      background: rgb(220, 202, 176);
+                      &::after {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        content: '';
+                        width: 90%;
+                        height: 2px;
+                        background-color: #196da6;
+                      }
+                    }
+                  }
+                  .skillBox + .skillBox {
+                    padding-top: 5px;
+                  }
+                  &.js {
+                    .skillBar {
+                      &::after {
+                        width: 80%;
+                      }
+                    }
+                  }
+                  &.react {
+                    .skillBar {
+                      &::after {
+                        width: 70%;
+                      }
+                    }
+                  }
+                  &.vue {
+                    .skillBar {
+                      &::after {
+                        width: 70%;
+                      }
+                    }
+                  }
+                  &.redux {
+                    .skillBar {
+                      &::after {
+                        width: 60%;
+                      }
+                    }
+                  }
+                  &.ts {
+                    .skillBar {
+                      &::after {
+                        width: 40%;
+                      }
+                    }
+                  }
+                }
+                
               }
-            }
+						}
 						&.contact {
 							border-radius: 40px 0 0 0;
 							background: rgb(255, 238, 213);
@@ -184,7 +289,7 @@ a {
 							.socialList {
 								display: inline-block;
 								margin-right: 4px;
-								font-size: 20px;
+								font-size: 14px;
 								line-height: 1;
 							}
 						}
@@ -199,7 +304,7 @@ a {
 						width: 100%;
 						padding: 50px;
 						border-radius: 40px 0;
-						
+
 						.articleTitle {
 							margin-bottom: 20px;
 							> h2 {
@@ -223,73 +328,99 @@ a {
 								}
 							}
 						}
-            &.project {
-              background: rgb(255, 238, 213);
-              .projectList {
-                padding-top: 10px;
-              }
-              .projectTitle {
-                font-weight: 600;
-                margin-bottom: 10px;
-              }
-              .projectDesc {
-                margin-bottom: 20px;
-              }
-              .projectLink {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                .projectSite,
-                .projectPDF {
-                  position: relative;
-                  a {
-                    display: block;
-                    color: #06278b;
-                  }
-                  &::after {
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    content: '';
-                    width: 100%;
-                    height: 1px;
-                    background-color: #06278b;
-                  }
-                }
-                .projectPDF {
-                  margin-left: 16px;
-                }
-              }
-            }
-            &.experience {
-              background: rgb(255, 238, 213);
-              .exList {
-                padding-top: 16px;
-              }
-              .exDate {
-                font-size: 14px;
-              }
-              .exTitle {
-                font-size: 18px;
-                font-weight: 600;
-                margin-bottom: 10px;
-              }
-              .exProject {
-                padding-left: 20px;
-                padding-top: 10px;
-                .exProList {
-                  padding-top: 10px;
-                  &:first-of-type {
-                    padding-top: 0;
-                  }
-                }
-                .exProTitle {
-                  font-weight: 600;
-                  font-size: 18px;
-                }
-              }
-            }
+						&.project {
+							background: rgb(255, 238, 213);
+							.projectList {
+								padding-top: 10px;
+							}
+							.projectTitle {
+								font-weight: 600;
+								font-size: 20px;
+								margin-bottom: 10px;
+							}
+							.projectDesc {
+								margin-bottom: 20px;
+							}
+							.projectLink {
+								width: 100%;
+								display: flex;
+								align-items: center;
+								justify-content: flex-end;
+								.projectSite,
+								.projectPDF {
+									position: relative;
+									a {
+										display: block;
+										color: #06278b;
+									}
+									&::after {
+										position: absolute;
+										left: 0;
+										bottom: 0;
+										content: '';
+										width: 100%;
+										height: 1px;
+										background-color: #06278b;
+									}
+								}
+								.projectPDF {
+									margin-left: 16px;
+								}
+							}
+						}
+						&.experience {
+							background: rgb(255, 238, 213);
+							.exList {
+								padding-top: 30px;
+								.exbox {
+									display: flex;
+									.exTitleBox {
+										width: 30%;
+										.exDate {
+											font-size: 12px;
+										}
+										.exTitle {
+											font-size: 18px;
+											font-weight: 600;
+											margin-bottom: 10px;
+										}
+									}
+									.exDesc {
+										width: 70%;
+										.exText {
+											font-size: 14px;
+										}
+										.exPlugin {
+											margin-bottom: 10px;
+										}
+										.exProject {
+											padding-top: 10px;
+											.exProList {
+												padding-top: 10px;
+												&:first-of-type {
+													padding-top: 0;
+												}
+                        .exProTitle {
+                          font-weight: 600;
+                          font-size: 14px;
+                          margin-bottom: 5px;
+                        }
+                        .proText {
+                          font-size: 12px;
+                        }
+                        .proWork {
+                          padding-top: 10px;
+                        }
+											}
+											
+                      .exWork {
+
+                      }
+										}
+									}
+								}
+							}
+						}
 					}
 					.lArticle + .lArticle {
 						margin-top: 20px;
