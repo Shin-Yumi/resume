@@ -80,10 +80,13 @@ a {
   font-weight: 300;
   line-height: 1;
 }
+.resume > .inner .profile .profileDesc .profileText {
+  font-size: 0;
+}
 .resume > .inner .profile .profileDesc .profileText .profileTit {
   font-size: 20px;
   letter-spacing: 2px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   line-height: 1;
 }
 .resume > .inner .profile .profileDesc .profileText > span {
@@ -117,14 +120,15 @@ a {
   display: flex;
 }
 .resume > .inner .resumeBox > .inner .rightSection {
+  width: 450px;
   margin-right: 20px;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle {
-  width: 450px;
   padding: 50px;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle {
   margin-bottom: 20px;
+  font-size: 0;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle > h2 {
   font-size: 24px;
@@ -132,6 +136,7 @@ a {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1;
+  margin-bottom: 10px;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle > span {
   position: relative;
@@ -273,6 +278,7 @@ a {
   border-radius: 40px 0;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle {
+  font-size: 0;
   margin-bottom: 20px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > h2 {
@@ -281,6 +287,7 @@ a {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1;
+  margin-bottom: 10px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > span {
   position: relative;
@@ -388,6 +395,534 @@ a {
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle + .lArticle {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 100px 50px;
+  }
+  .resume > .inner .profile {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 400px;
+  }
+  .resume > .inner .profile .profileImg {
+    width: 300px;
+  }
+  .resume > .inner .profile .profileDesc {
+    width: calc(100% - 350px);
+  }
+  .resume > .inner .profile .profileDesc .profileTop .name {
+    font-size: 40px;
+  }
+  .resume > .inner .profile .profileDesc .profileTop .job {
+    font-size: 20px;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTit {
+    font-size: 18px;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTxt {
+    font-size: 12px;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTxt span {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox {
+    padding-top: 50px;
+  }
+  .resume > .inner .resumeBox > .inner {
+    display: flex;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection {
+    width: 40%;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle > h2 {
+    font-size: 20px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .school {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .major {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateAgency {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillEnv {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillTitle {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .conTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection {
+    width: 60%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > h2 {
+    font-size: 20px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectTitle {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
+    color: #196da6;
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
+    background-color: #196da6;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox {
+    flex-direction: column;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox .exTitle {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .resume {
+    padding: 30px;
+  }
+  .resume > .inner .profile {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 350px;
+  }
+  .resume > .inner .profile .profileImg {
+    width: 250px;
+    margin-right: 20px;
+  }
+  .resume > .inner .profile .profileDesc {
+    width: calc(100% - 270px);
+  }
+  .resume > .inner .profile .profileDesc .profileTop {
+    margin-bottom: 20px;
+  }
+  .resume > .inner .profile .profileDesc .profileTop .name {
+    font-size: 20px;
+  }
+  .resume > .inner .profile .profileDesc .profileTop .job {
+    font-size: 14px;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTit {
+    font-size: 14px;
+    margin-bottom: 5;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTxt {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTxt span {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox {
+    padding-top: 30px;
+  }
+  .resume > .inner .resumeBox > .inner {
+    display: flex;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection {
+    width: 39%;
+    margin-right: 2%;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle {
+    padding: 30px 20px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle {
+    margin-bottom: 10px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle > h2 {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list .box p {
+    padding-top: 5px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list + .list {
+    padding-top: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .school {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .major {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateAgency {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillEnv {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillTitle {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .conTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .conPhone {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .socialList {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle + .rArticle {
+    margin-top: 10px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection {
+    width: 59%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle {
+    padding: 30px 20px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle {
+    margin-bottom: 0;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > h2 {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
+    color: #196da6;
+    font-size: 10px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
+    background-color: #196da6;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList {
+    padding-top: 20px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox {
+    flex-direction: column;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox {
+    width: 100%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox .exTitle {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc {
+    width: 100%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exText {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle + .lArticle {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    padding: 80px 30px;
+  }
+  .resume {
+    padding: 50px;
+  }
+  .resume > .inner .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .resume > .inner .profile .profileImg {
+    width: 300px;
+    margin-right: 0;
+  }
+  .resume > .inner .profile .profileDesc {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .resume > .inner .profile .profileDesc .profileTop {
+    margin-bottom: 20px;
+  }
+  .resume > .inner .profile .profileDesc .profileTop .name {
+    font-size: 20px;
+  }
+  .resume > .inner .profile .profileDesc .profileTop .job {
+    font-size: 14px;
+  }
+  .resume > .inner .profile .profileDesc .profileText {
+    width: 100%;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTit {
+    font-size: 14px;
+    margin-bottom: 5;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTxt {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTxt span {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner {
+    flex-direction: column;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle {
+    padding: 30px 20px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle {
+    margin-bottom: 10px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle > h2 {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list .box p {
+    padding-top: 5px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list + .list {
+    padding-top: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .school {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .major {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateAgency {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillEnv {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillTitle {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .conTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .conPhone {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .socialList {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle + .rArticle {
+    margin-top: 20px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection {
+    width: 100%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle {
+    padding: 30px 20px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle {
+    margin-bottom: 0;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > h2 {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
+    color: #196da6;
+    font-size: 10px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
+    background-color: #196da6;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList {
+    padding-top: 20px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox {
+    flex-direction: column;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox {
+    width: 100%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox .exTitle {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc {
+    width: 100%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exText {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle + .lArticle {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .resume {
+    padding: 30px 20px;
+  }
+  .resume > .inner .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .resume > .inner .profile .profileImg {
+    width: 220px;
+    margin-right: 0;
+  }
+  .resume > .inner .profile .profileDesc {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .resume > .inner .profile .profileDesc .profileTop {
+    margin-bottom: 20px;
+  }
+  .resume > .inner .profile .profileDesc .profileTop .name {
+    font-size: 20px;
+  }
+  .resume > .inner .profile .profileDesc .profileTop .job {
+    font-size: 14px;
+  }
+  .resume > .inner .profile .profileDesc .profileText {
+    width: 100%;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTit {
+    font-size: 14px;
+    margin-bottom: 5;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTxt {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  .resume > .inner .profile .profileDesc .profileText .profileTxt span {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner {
+    flex-direction: column;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle {
+    padding: 30px 20px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle {
+    margin-bottom: 10px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .articleTitle > h2 {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list .box p {
+    padding-top: 5px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list + .list {
+    padding-top: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .school {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu .major {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.certificate .certificateAgency {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillEnv {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillTitle {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .conTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .conPhone {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact .socialList {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  .resume > .inner .resumeBox > .inner .rightSection .rArticle + .rArticle {
+    margin-top: 20px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection {
+    width: 100%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle {
+    padding: 30px 20px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle {
+    margin-bottom: 0;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > h2 {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
+    color: #196da6;
+    font-size: 10px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
+    background-color: #196da6;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList {
+    padding-top: 20px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox {
+    flex-direction: column;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox {
+    width: 100%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox .exTitle {
+    font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc {
+    width: 100%;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exText {
+    font-size: 12px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle + .lArticle {
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

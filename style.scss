@@ -81,10 +81,11 @@ a {
 				}
 
 				.profileText {
+					font-size: 0;
 					.profileTit {
 						font-size: 20px;
 						letter-spacing: 2px;
-						margin-bottom: 5px;
+						margin-bottom: 10px;
 						line-height: 1;
 					}
 					> span {
@@ -120,19 +121,21 @@ a {
 			> .inner {
 				display: flex;
 				.rightSection {
+					width: 450px;
 					margin-right: 20px;
 					.rArticle {
-						width: 450px;
 						padding: 50px;
 
 						.articleTitle {
 							margin-bottom: 20px;
+							font-size: 0;
 							> h2 {
 								font-size: 24px;
 								color: #000;
 								font-weight: 600;
 								letter-spacing: 1px;
 								line-height: 1;
+								margin-bottom: 10px;
 							}
 							> span {
 								position: relative;
@@ -199,86 +202,84 @@ a {
 							}
 							.skillTitle {
 								font-size: 12px;
-                font-size: 300;
+								font-size: 300;
 							}
-              .skillLists {
-                padding-top: 10px;
-                .skillList {
-                  padding: 5px 0;
-                  .skillBox {
-                    .skillName {
-                      font-size: 12px;
-                      margin-bottom: 10px;
-                    }
-                    .useName {
-                      font-size: 12px;
-                      margin-bottom: 5px;
-                    }
-                    .useSkill {
-                      font-size: 12px;
-                      padding: 0;
-                      color: #196da6;
-
-                    }
-                    .skillBar {
-                      position: relative;
-                      width: 100%;
-                      height: 2px;
-                      border-radius: 50px;
-                      background: rgb(220, 202, 176);
-                      &::after {
-                        position: absolute;
-                        left: 0;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        content: '';
-                        width: 90%;
-                        height: 2px;
-                        background-color: #196da6;
-                      }
-                    }
-                  }
-                  .skillBox + .skillBox {
-                    padding-top: 5px;
-                  }
-                  &.js {
-                    .skillBar {
-                      &::after {
-                        width: 80%;
-                      }
-                    }
-                  }
-                  &.react {
-                    .skillBar {
-                      &::after {
-                        width: 70%;
-                      }
-                    }
-                  }
-                  &.vue {
-                    .skillBar {
-                      &::after {
-                        width: 70%;
-                      }
-                    }
-                  }
-                  &.redux {
-                    .skillBar {
-                      &::after {
-                        width: 60%;
-                      }
-                    }
-                  }
-                  &.ts {
-                    .skillBar {
-                      &::after {
-                        width: 40%;
-                      }
-                    }
-                  }
-                }
-                
-              }
+							.skillLists {
+								padding-top: 10px;
+								.skillList {
+									padding: 5px 0;
+									.skillBox {
+										.skillName {
+											font-size: 12px;
+											margin-bottom: 10px;
+										}
+										.useName {
+											font-size: 12px;
+											margin-bottom: 5px;
+										}
+										.useSkill {
+											font-size: 12px;
+											padding: 0;
+											color: #196da6;
+										}
+										.skillBar {
+											position: relative;
+											width: 100%;
+											height: 2px;
+											border-radius: 50px;
+											background: rgb(220, 202, 176);
+											&::after {
+												position: absolute;
+												left: 0;
+												top: 50%;
+												transform: translateY(-50%);
+												content: '';
+												width: 90%;
+												height: 2px;
+												background-color: #196da6;
+											}
+										}
+									}
+									.skillBox + .skillBox {
+										padding-top: 5px;
+									}
+									&.js {
+										.skillBar {
+											&::after {
+												width: 80%;
+											}
+										}
+									}
+									&.react {
+										.skillBar {
+											&::after {
+												width: 70%;
+											}
+										}
+									}
+									&.vue {
+										.skillBar {
+											&::after {
+												width: 70%;
+											}
+										}
+									}
+									&.redux {
+										.skillBar {
+											&::after {
+												width: 60%;
+											}
+										}
+									}
+									&.ts {
+										.skillBar {
+											&::after {
+												width: 40%;
+											}
+										}
+									}
+								}
+							}
 						}
 						&.contact {
 							border-radius: 40px 0 0 0;
@@ -306,6 +307,7 @@ a {
 						border-radius: 40px 0;
 
 						.articleTitle {
+							font-size: 0;
 							margin-bottom: 20px;
 							> h2 {
 								font-size: 24px;
@@ -313,6 +315,7 @@ a {
 								font-weight: 600;
 								letter-spacing: 1px;
 								line-height: 1;
+                margin-bottom: 10px;
 							}
 							> span {
 								position: relative;
@@ -372,6 +375,7 @@ a {
 							background: rgb(255, 238, 213);
 							.exList {
 								padding-top: 30px;
+                
 								.exbox {
 									display: flex;
 									.exTitleBox {
@@ -400,22 +404,21 @@ a {
 												&:first-of-type {
 													padding-top: 0;
 												}
-                        .exProTitle {
-                          font-weight: 600;
-                          font-size: 14px;
-                          margin-bottom: 5px;
-                        }
-                        .proText {
-                          font-size: 12px;
-                        }
-                        .proWork {
-                          padding-top: 10px;
-                        }
+												.exProTitle {
+													font-weight: 600;
+													font-size: 14px;
+													margin-bottom: 5px;
+												}
+												.proText {
+													font-size: 12px;
+												}
+												.proWork {
+													padding-top: 10px;
+												}
 											}
-											
-                      .exWork {
 
-                      }
+											.exWork {
+											}
 										}
 									}
 								}
@@ -424,6 +427,649 @@ a {
 					}
 					.lArticle + .lArticle {
 						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		padding: 100px 50px;
+	}
+	.resume {
+		> .inner {
+			.profile {
+				display: flex;
+				align-items: flex-end;
+				width: 100%;
+				height: 400px;
+				.profileImg {
+					width: 300px;
+				}
+				.profileDesc {
+					width: calc(100% - 350px);
+					.profileTop {
+						.name {
+							font-size: 40px;
+						}
+						.job {
+							font-size: 20px;
+						}
+					}
+
+					.profileText {
+						.profileTit {
+							font-size: 18px;
+						}
+						.profileTxt {
+							font-size: 12px;
+
+							span {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+			.resumeBox {
+				padding-top: 50px;
+				> .inner {
+					display: flex;
+					.rightSection {
+						width: 40%;
+						.rArticle {
+							.articleTitle {
+								> h2 {
+									font-size: 20px;
+								}
+							}
+							&.edu {
+								.school {
+									font-size: 14px;
+								}
+								.major {
+									font-size: 12px;
+								}
+							}
+							&.certificate {
+								.certificateTitle {
+									font-size: 14px;
+								}
+								.certificateAgency {
+									font-size: 12px;
+								}
+							}
+							&.skill {
+								.skillEnv {
+									font-size: 14px;
+								}
+								.skillTitle {
+									font-size: 12px;
+								}
+							}
+							&.contact {
+								.conTitle {
+									font-size: 14px;
+								}
+							}
+						}
+					}
+					.leftSection {
+						width: 60%;
+						.lArticle {
+							.articleTitle {
+								> h2 {
+									font-size: 20px;
+								}
+							}
+							&.project {
+								.projectTitle {
+									font-size: 16px;
+								}
+								.projectDesc {
+									font-size: 12px;
+								}
+								.projectLink {
+									.projectSite,
+									.projectPDF {
+										a {
+											color: #196da6;
+											font-size: 12px;
+										}
+										&::after {
+											background-color: #196da6;
+										}
+									}
+								}
+							}
+							&.experience {
+								.exList {
+									.exbox {
+										flex-direction: column;
+										.exTitleBox {
+											.exTitle {
+												font-size: 16px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 798px) {
+	.resume {
+		padding: 30px;
+		> .inner {
+			.profile {
+				display: flex;
+				align-items: flex-end;
+				width: 100%;
+				height: 350px;
+				.profileImg {
+					width: 250px;
+					margin-right: 20px;
+				}
+				.profileDesc {
+					width: calc(100% - 270px);
+					.profileTop {
+						margin-bottom: 20px;
+						.name {
+							font-size: 20px;
+						}
+						.job {
+							font-size: 14px;
+						}
+					}
+
+					.profileText {
+						.profileTit {
+							font-size: 14px;
+							margin-bottom: 5;
+						}
+						.profileTxt {
+							margin-top: 5px;
+							font-size: 10px;
+							span {
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+			.resumeBox {
+				padding-top: 30px;
+				> .inner {
+					display: flex;
+					.rightSection {
+						width: 39%;
+            margin-right: 2%;
+						.rArticle {
+							padding: 30px 20px;
+							.articleTitle {
+								margin-bottom: 10px;
+								> h2 {
+									font-size: 16px;
+								}
+							}
+							.lists {
+								.list {
+									.box {
+										p {
+											padding-top: 5px;
+										}
+									}
+								}
+								.list + .list {
+									padding-top: 16px;
+								}
+							}
+							&.edu {
+								.school {
+									font-size: 14px;
+								}
+								.major {
+									font-size: 12px;
+								}
+							}
+							&.certificate {
+								.certificateTitle {
+									font-size: 14px;
+								}
+								.certificateAgency {
+									font-size: 12px;
+								}
+							}
+							&.skill {
+								.skillEnv {
+									font-size: 14px;
+								}
+								.skillTitle {
+									font-size: 12px;
+								}
+							}
+							&.contact {
+								.conTitle {
+									font-size: 14px;
+								}
+								.conPhone {
+									font-size: 12px;
+								}
+								.socialList {
+									font-size: 12px;
+									margin-right: 2px;
+								}
+							}
+						}
+            .rArticle + .rArticle {
+              margin-top: 10px;
+            }
+					}
+					.leftSection {
+						width: 59%;
+						.lArticle {
+							padding: 30px 20px;
+							.articleTitle {
+								margin-bottom: 0;
+								> h2 {
+									font-size: 16px;
+								}
+							}
+							&.project {
+								.projectTitle {
+									font-size: 14px;
+								}
+								.projectDesc {
+									font-size: 12px;
+								}
+								.projectLink {
+									.projectSite,
+									.projectPDF {
+										a {
+											color: #196da6;
+											font-size: 10px;
+										}
+										&::after {
+											background-color: #196da6;
+										}
+									}
+								}
+							}
+							&.experience {
+								.exList {
+                  padding-top: 20px;
+									.exbox {
+										flex-direction: column;
+										.exTitleBox {
+                      width: 100%;
+											.exTitle {
+												font-size: 16px;
+											}
+										}
+                    .exDesc {
+                      width: 100%;
+                      .exText {
+                        font-size: 12px;
+                      }
+                    }
+									}
+								}
+							}
+						}
+            .lArticle + .lArticle {
+              margin-top: 10px;
+            }
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 576px) {
+  body {
+		padding: 80px 30px;
+	}
+	.resume {
+		padding: 50px;
+		> .inner {
+			.profile {
+				display: flex;
+        flex-direction: column;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				.profileImg {
+					width: 300px;
+					margin-right: 0;
+				}
+				.profileDesc {
+					width: 100%;
+          margin-top: 20px;
+					.profileTop {
+						margin-bottom: 20px;
+						.name {
+							font-size: 20px;
+						}
+						.job {
+							font-size: 14px;
+						}
+					}
+
+					.profileText {
+            width: 100%;
+						.profileTit {
+							font-size: 14px;
+							margin-bottom: 5;
+						}
+						.profileTxt {
+							margin-top: 5px;
+							font-size: 10px;
+							span {
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+			.resumeBox {
+				> .inner {
+          flex-direction: column;
+					.rightSection {
+						width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+						.rArticle {
+							padding: 30px 20px;
+							.articleTitle {
+								margin-bottom: 10px;
+								> h2 {
+									font-size: 16px;
+								}
+							}
+							.lists {
+								.list {
+									.box {
+										p {
+											padding-top: 5px;
+										}
+									}
+								}
+								.list + .list {
+									padding-top: 16px;
+								}
+							}
+							&.edu {
+								.school {
+									font-size: 14px;
+								}
+								.major {
+									font-size: 12px;
+								}
+							}
+							&.certificate {
+								.certificateTitle {
+									font-size: 14px;
+								}
+								.certificateAgency {
+									font-size: 12px;
+								}
+							}
+							&.skill {
+								.skillEnv {
+									font-size: 14px;
+								}
+								.skillTitle {
+									font-size: 12px;
+								}
+							}
+							&.contact {
+								.conTitle {
+									font-size: 14px;
+								}
+								.conPhone {
+									font-size: 12px;
+								}
+								.socialList {
+									font-size: 12px;
+									margin-right: 2px;
+								}
+							}
+						}
+            .rArticle + .rArticle {
+              margin-top: 20px;
+            }
+					}
+					.leftSection {
+						width: 100%;
+						.lArticle {
+							padding: 30px 20px;
+							.articleTitle {
+								margin-bottom: 0;
+								> h2 {
+									font-size: 16px;
+								}
+							}
+							&.project {
+								.projectTitle {
+									font-size: 14px;
+								}
+								.projectDesc {
+									font-size: 12px;
+								}
+								.projectLink {
+									.projectSite,
+									.projectPDF {
+										a {
+											color: #196da6;
+											font-size: 10px;
+										}
+										&::after {
+											background-color: #196da6;
+										}
+									}
+								}
+							}
+							&.experience {
+								.exList {
+                  padding-top: 20px;
+									.exbox {
+										flex-direction: column;
+										.exTitleBox {
+                      width: 100%;
+											.exTitle {
+												font-size: 16px;
+											}
+										}
+                    .exDesc {
+                      width: 100%;
+                      .exText {
+                        font-size: 12px;
+                      }
+                    }
+									}
+								}
+							}
+						}
+            .lArticle + .lArticle {
+              margin-top: 20px;
+            }
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 425px) {
+	.resume {
+    padding: 30px 20px;
+		> .inner {
+			.profile {
+				display: flex;
+        flex-direction: column;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				.profileImg {
+					width: 220px;
+					margin-right: 0;
+				}
+				.profileDesc {
+					width: 100%;
+          margin-top: 20px;
+					.profileTop {
+						margin-bottom: 20px;
+						.name {
+							font-size: 20px;
+						}
+						.job {
+							font-size: 14px;
+						}
+					}
+
+					.profileText {
+            width: 100%;
+						.profileTit {
+							font-size: 14px;
+							margin-bottom: 5;
+						}
+						.profileTxt {
+							margin-top: 5px;
+							font-size: 10px;
+							span {
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+			.resumeBox {
+				> .inner {
+          flex-direction: column;
+					.rightSection {
+						width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+						.rArticle {
+							padding: 30px 20px;
+							.articleTitle {
+								margin-bottom: 10px;
+								> h2 {
+									font-size: 16px;
+								}
+							}
+							.lists {
+								.list {
+									.box {
+										p {
+											padding-top: 5px;
+										}
+									}
+								}
+								.list + .list {
+									padding-top: 16px;
+								}
+							}
+							&.edu {
+								.school {
+									font-size: 14px;
+								}
+								.major {
+									font-size: 12px;
+								}
+							}
+							&.certificate {
+								.certificateTitle {
+									font-size: 14px;
+								}
+								.certificateAgency {
+									font-size: 12px;
+								}
+							}
+							&.skill {
+								.skillEnv {
+									font-size: 14px;
+								}
+								.skillTitle {
+									font-size: 12px;
+								}
+							}
+							&.contact {
+								.conTitle {
+									font-size: 14px;
+								}
+								.conPhone {
+									font-size: 12px;
+								}
+								.socialList {
+									font-size: 12px;
+									margin-right: 2px;
+								}
+							}
+						}
+            .rArticle + .rArticle {
+              margin-top: 20px;
+            }
+					}
+					.leftSection {
+						width: 100%;
+						.lArticle {
+							padding: 30px 20px;
+							.articleTitle {
+								margin-bottom: 0;
+								> h2 {
+									font-size: 16px;
+								}
+							}
+							&.project {
+								.projectTitle {
+									font-size: 14px;
+								}
+								.projectDesc {
+									font-size: 12px;
+								}
+								.projectLink {
+									.projectSite,
+									.projectPDF {
+										a {
+											color: #196da6;
+											font-size: 10px;
+										}
+										&::after {
+											background-color: #196da6;
+										}
+									}
+								}
+							}
+							&.experience {
+								.exList {
+                  padding-top: 20px;
+									.exbox {
+										flex-direction: column;
+										.exTitleBox {
+                      width: 100%;
+											.exTitle {
+												font-size: 16px;
+											}
+										}
+                    .exDesc {
+                      width: 100%;
+                      .exText {
+                        font-size: 12px;
+                      }
+                    }
+									}
+								}
+							}
+						}
+            .lArticle + .lArticle {
+              margin-top: 20px;
+            }
 					}
 				}
 			}
