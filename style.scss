@@ -105,13 +105,9 @@ a {
 						margin-top: 10px;
 						font-size: 14px;
 						font-weight: 300;
-
-						span {
-							display: inline-block;
-							padding-bottom: 10px;
-							font-size: 18px;
-							font-weight: 500;
-						}
+					}
+					.indent {
+						text-indent: 3px;
 					}
 				}
 			}

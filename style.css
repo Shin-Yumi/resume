@@ -107,11 +107,8 @@ a {
   font-size: 14px;
   font-weight: 300;
 }
-.resume > .inner .profile .profileDesc .profileText .profileTxt span {
-  display: inline-block;
-  padding-bottom: 10px;
-  font-size: 18px;
-  font-weight: 500;
+.resume > .inner .profile .profileDesc .profileText .indent {
+  text-indent: 3px;
 }
 .resume > .inner .resumeBox {
   padding-top: 50px;
