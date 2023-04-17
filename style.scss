@@ -205,77 +205,21 @@ a {
 								font-size: 300;
 							}
 							.skillLists {
+								display: flex;
 								padding-top: 10px;
 								.skillList {
-									padding: 5px 0;
+									width: 30px;
+									height: 30px;
+									margin-right: 4px;
 									.skillBox {
-										.skillName {
-											font-size: 12px;
-											margin-bottom: 10px;
-										}
-										.useName {
-											font-size: 12px;
-											margin-bottom: 5px;
-										}
-										.useSkill {
-											font-size: 12px;
-											padding: 0;
-											color: #196da6;
-										}
-										.skillBar {
-											position: relative;
+										width: 100%;
+										height: 100%;
+										.skillIcon {
+											display: block;
 											width: 100%;
-											height: 2px;
-											border-radius: 50px;
-											background: rgb(220, 202, 176);
-											&::after {
-												position: absolute;
-												left: 0;
-												top: 50%;
-												transform: translateY(-50%);
-												content: '';
-												width: 90%;
-												height: 2px;
-												background-color: #196da6;
-											}
-										}
-									}
-									.skillBox + .skillBox {
-										padding-top: 5px;
-									}
-									&.js {
-										.skillBar {
-											&::after {
-												width: 80%;
-											}
-										}
-									}
-									&.react {
-										.skillBar {
-											&::after {
-												width: 70%;
-											}
-										}
-									}
-									&.vue {
-										.skillBar {
-											&::after {
-												width: 70%;
-											}
-										}
-									}
-									&.redux {
-										.skillBar {
-											&::after {
-												width: 60%;
-											}
-										}
-									}
-									&.ts {
-										.skillBar {
-											&::after {
-												width: 40%;
-											}
+											height: 100%;
+											background: url('./img/html-icon.svg') no-repeat center;
+											background-size: 30px !important;
 										}
 									}
 								}
@@ -315,7 +259,7 @@ a {
 								font-weight: 600;
 								letter-spacing: 1px;
 								line-height: 1;
-                margin-bottom: 10px;
+								margin-bottom: 10px;
 							}
 							> span {
 								position: relative;
@@ -375,7 +319,7 @@ a {
 							background: rgb(255, 238, 213);
 							.exList {
 								padding-top: 30px;
-                
+
 								.exbox {
 									display: flex;
 									.exTitleBox {
@@ -609,7 +553,7 @@ a {
 					display: flex;
 					.rightSection {
 						width: 39%;
-            margin-right: 2%;
+						margin-right: 2%;
 						.rArticle {
 							padding: 30px 20px;
 							.articleTitle {
@@ -667,9 +611,9 @@ a {
 								}
 							}
 						}
-            .rArticle + .rArticle {
-              margin-top: 10px;
-            }
+						.rArticle + .rArticle {
+							margin-top: 10px;
+						}
 					}
 					.leftSection {
 						width: 59%;
@@ -703,28 +647,28 @@ a {
 							}
 							&.experience {
 								.exList {
-                  padding-top: 20px;
+									padding-top: 20px;
 									.exbox {
 										flex-direction: column;
 										.exTitleBox {
-                      width: 100%;
+											width: 100%;
 											.exTitle {
 												font-size: 16px;
 											}
 										}
-                    .exDesc {
-                      width: 100%;
-                      .exText {
-                        font-size: 12px;
-                      }
-                    }
+										.exDesc {
+											width: 100%;
+											.exText {
+												font-size: 12px;
+											}
+										}
 									}
 								}
 							}
 						}
-            .lArticle + .lArticle {
-              margin-top: 10px;
-            }
+						.lArticle + .lArticle {
+							margin-top: 10px;
+						}
 					}
 				}
 			}
@@ -732,7 +676,7 @@ a {
 	}
 }
 @media screen and (max-width: 576px) {
-  body {
+	body {
 		padding: 80px 30px;
 	}
 	.resume {
@@ -740,7 +684,7 @@ a {
 		> .inner {
 			.profile {
 				display: flex;
-        flex-direction: column;
+				flex-direction: column;
 				align-items: center;
 				width: 100%;
 				height: 100%;
@@ -750,7 +694,7 @@ a {
 				}
 				.profileDesc {
 					width: 100%;
-          margin-top: 20px;
+					margin-top: 20px;
 					.profileTop {
 						margin-bottom: 20px;
 						.name {
@@ -762,7 +706,7 @@ a {
 					}
 
 					.profileText {
-            width: 100%;
+						width: 100%;
 						.profileTit {
 							font-size: 14px;
 							margin-bottom: 5;
@@ -779,11 +723,11 @@ a {
 			}
 			.resumeBox {
 				> .inner {
-          flex-direction: column;
+					flex-direction: column;
 					.rightSection {
 						width: 100%;
-            margin-right: 0;
-            margin-bottom: 20px;
+						margin-right: 0;
+						margin-bottom: 20px;
 						.rArticle {
 							padding: 30px 20px;
 							.articleTitle {
@@ -841,9 +785,9 @@ a {
 								}
 							}
 						}
-            .rArticle + .rArticle {
-              margin-top: 20px;
-            }
+						.rArticle + .rArticle {
+							margin-top: 20px;
+						}
 					}
 					.leftSection {
 						width: 100%;
@@ -877,28 +821,28 @@ a {
 							}
 							&.experience {
 								.exList {
-                  padding-top: 20px;
+									padding-top: 20px;
 									.exbox {
 										flex-direction: column;
 										.exTitleBox {
-                      width: 100%;
+											width: 100%;
 											.exTitle {
 												font-size: 16px;
 											}
 										}
-                    .exDesc {
-                      width: 100%;
-                      .exText {
-                        font-size: 12px;
-                      }
-                    }
+										.exDesc {
+											width: 100%;
+											.exText {
+												font-size: 12px;
+											}
+										}
 									}
 								}
 							}
 						}
-            .lArticle + .lArticle {
-              margin-top: 20px;
-            }
+						.lArticle + .lArticle {
+							margin-top: 20px;
+						}
 					}
 				}
 			}
@@ -907,11 +851,11 @@ a {
 }
 @media screen and (max-width: 425px) {
 	.resume {
-    padding: 30px 20px;
+		padding: 30px 20px;
 		> .inner {
 			.profile {
 				display: flex;
-        flex-direction: column;
+				flex-direction: column;
 				align-items: center;
 				width: 100%;
 				height: 100%;
@@ -921,7 +865,7 @@ a {
 				}
 				.profileDesc {
 					width: 100%;
-          margin-top: 20px;
+					margin-top: 20px;
 					.profileTop {
 						margin-bottom: 20px;
 						.name {
@@ -933,7 +877,7 @@ a {
 					}
 
 					.profileText {
-            width: 100%;
+						width: 100%;
 						.profileTit {
 							font-size: 14px;
 							margin-bottom: 5;
@@ -950,11 +894,11 @@ a {
 			}
 			.resumeBox {
 				> .inner {
-          flex-direction: column;
+					flex-direction: column;
 					.rightSection {
 						width: 100%;
-            margin-right: 0;
-            margin-bottom: 20px;
+						margin-right: 0;
+						margin-bottom: 20px;
 						.rArticle {
 							padding: 30px 20px;
 							.articleTitle {
@@ -1012,9 +956,9 @@ a {
 								}
 							}
 						}
-            .rArticle + .rArticle {
-              margin-top: 20px;
-            }
+						.rArticle + .rArticle {
+							margin-top: 20px;
+						}
 					}
 					.leftSection {
 						width: 100%;
@@ -1048,28 +992,28 @@ a {
 							}
 							&.experience {
 								.exList {
-                  padding-top: 20px;
+									padding-top: 20px;
 									.exbox {
 										flex-direction: column;
 										.exTitleBox {
-                      width: 100%;
+											width: 100%;
 											.exTitle {
 												font-size: 16px;
 											}
 										}
-                    .exDesc {
-                      width: 100%;
-                      .exText {
-                        font-size: 12px;
-                      }
-                    }
+										.exDesc {
+											width: 100%;
+											.exText {
+												font-size: 12px;
+											}
+										}
 									}
 								}
 							}
 						}
-            .lArticle + .lArticle {
-              margin-top: 20px;
-            }
+						.lArticle + .lArticle {
+							margin-top: 20px;
+						}
 					}
 				}
 			}

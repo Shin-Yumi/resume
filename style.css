@@ -200,58 +200,24 @@ a {
   font-size: 300;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists {
+  display: flex;
   padding-top: 10px;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList {
-  padding: 5px 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;
 }
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .skillName {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .useName {
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .useSkill {
-  font-size: 12px;
-  padding: 0;
-  color: #196da6;
-}
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .skillBar {
-  position: relative;
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox {
   width: 100%;
-  height: 2px;
-  border-radius: 50px;
-  background: rgb(220, 202, 176);
+  height: 100%;
 }
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .skillBar::after {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  content: "";
-  width: 90%;
-  height: 2px;
-  background-color: #196da6;
-}
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox + .skillBox {
-  padding-top: 5px;
-}
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.js .skillBar::after {
-  width: 80%;
-}
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.react .skillBar::after {
-  width: 70%;
-}
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.vue .skillBar::after {
-  width: 70%;
-}
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.redux .skillBar::after {
-  width: 60%;
-}
-.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList.ts .skillBar::after {
-  width: 40%;
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists .skillList .skillBox .skillIcon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("./img/html-icon.svg") no-repeat center;
+  background-size: 30px !important;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.contact {
   border-radius: 40px 0 0 0;
