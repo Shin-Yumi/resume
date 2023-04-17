@@ -206,11 +206,13 @@ a {
 							}
 							.skillLists {
 								display: flex;
+								flex-wrap: wrap;
+								gap: 10px;
 								padding-top: 10px;
 								.skillList {
 									width: 30px;
 									height: 30px;
-									margin-right: 4px;
+									
 									.skillBox {
 										width: 100%;
 										height: 100%;
@@ -221,6 +223,41 @@ a {
 											background: url('./img/html-icon.svg') no-repeat center;
 											background-size: 30px !important;
 										}
+									}
+									&:nth-of-type(2) .skillBox .skillIcon {
+										background: url('./img/css3-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(3) .skillBox .skillIcon {
+										background: url('./img/sass-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(4) .skillBox .skillIcon {
+										background: url('./img/javascript-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(5) .skillBox .skillIcon {
+										background: url('./img/typescript-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(6) .skillBox .skillIcon {
+										background: url('./img/vuejs-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(7) .skillBox .skillIcon {
+										background: url('./img/react-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(8) .skillBox .skillIcon {
+										background: url('./img/nuxt-icon.svg') no-repeat center;
+									}
+
+									&:nth-of-type(9) .skillBox .skillIcon {
+										background: url('./img/nextjs-icon.svg') no-repeat center;
+									}
+
+									&:nth-of-type(10) .skillBox .skillIcon {
+										background: url('./img/redux-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(11) .skillBox .skillIcon {
+										background: url('./img/tailwindcss-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(12) .skillBox .skillIcon {
+										background: url('./img/bootstrap-icon.svg') no-repeat center;
 									}
 								}
 							}
