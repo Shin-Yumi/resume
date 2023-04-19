@@ -345,7 +345,7 @@ a {
   background: rgb(255, 238, 213);
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox {
   display: flex;
@@ -357,7 +357,7 @@ a {
   font-size: 12px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox .exTitle {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -374,21 +374,41 @@ a {
   padding-top: 10px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList:first-of-type {
   padding-top: 0;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .exProTitle {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
+  color: #06278b;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .exProTitle a {
+  color: #06278b;
+  border-bottom: 1px solid #06278b;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .exProTitle span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #06278b;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .exProTitle:hover a {
+  color: #196da6;
+  border-bottom: 1px solid #196da6;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .proText {
   font-size: 12px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .proWork {
+  padding-top: 20px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .proTools {
   padding-top: 10px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .proSite {
+  border-bottom: 1px solid #605852;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle + .lArticle {
   margin-top: 20px;
@@ -484,6 +504,13 @@ a {
   }
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exTitleBox .exTitle {
     font-size: 16px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .exProTitle {
+    font-size: 14px;
+  }
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox .exDesc .exProject .exProList .exProTitle span {
+    display: block;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 798px) {
@@ -674,12 +701,11 @@ a {
     font-size: 12px;
   }
   .resume > .inner .resumeBox > .inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .resume > .inner .resumeBox > .inner .rightSection {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 20px;
   }
   .resume > .inner .resumeBox > .inner .rightSection .rArticle {
     padding: 30px 20px;
@@ -729,6 +755,7 @@ a {
   }
   .resume > .inner .resumeBox > .inner .leftSection {
     width: 100%;
+    margin-bottom: 20px;
   }
   .resume > .inner .resumeBox > .inner .leftSection .lArticle {
     padding: 30px 20px;

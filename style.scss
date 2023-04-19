@@ -351,7 +351,7 @@ a {
 						&.experience {
 							background: rgb(255, 238, 213);
 							.exList {
-								padding-top: 30px;
+								padding-top: 50px;
 
 								.exbox {
 									display: flex;
@@ -361,7 +361,7 @@ a {
 											font-size: 12px;
 										}
 										.exTitle {
-											font-size: 18px;
+											font-size: 20px;
 											font-weight: 600;
 											margin-bottom: 10px;
 										}
@@ -377,20 +377,42 @@ a {
 										.exProject {
 											padding-top: 10px;
 											.exProList {
-												padding-top: 10px;
+												padding-top: 30px;
 												&:first-of-type {
 													padding-top: 0;
 												}
 												.exProTitle {
 													font-weight: 600;
-													font-size: 14px;
+													font-size: 16px;
 													margin-bottom: 5px;
+													color: #06278b;
+													a {
+														color: #06278b;
+														border-bottom: 1px solid #06278b;
+													}
+													span {
+														font-size: 12px;
+														font-weight: 400;
+														color: #06278b;
+													}
+													&:hover a {
+														color: #196da6;
+														border-bottom: 1px solid #196da6;
+													
+													}
 												}
 												.proText {
 													font-size: 12px;
 												}
 												.proWork {
+													padding-top: 20px;
+												}
+												.proTools {
 													padding-top: 10px;
+												}
+												.proSite {
+													
+													border-bottom: 1px solid #605852;
 												}
 											}
 
@@ -528,6 +550,19 @@ a {
 										.exTitleBox {
 											.exTitle {
 												font-size: 16px;
+											}
+										}
+										.exDesc {
+											.exProject {
+												.exProList {
+													.exProTitle {
+														font-size: 14px;
+														span {
+															display: block;
+															font-size: 10px;
+														}
+													}
+												}
 											}
 										}
 									}
@@ -756,11 +791,11 @@ a {
 			}
 			.resumeBox {
 				> .inner {
-					flex-direction: column;
+					flex-direction: column-reverse;
 					.rightSection {
 						width: 100%;
 						margin-right: 0;
-						margin-bottom: 20px;
+						
 						.rArticle {
 							padding: 30px 20px;
 							.articleTitle {
@@ -824,6 +859,7 @@ a {
 					}
 					.leftSection {
 						width: 100%;
+						margin-bottom: 20px;
 						.lArticle {
 							padding: 30px 20px;
 							.articleTitle {
