@@ -152,7 +152,7 @@ a {
   padding-top: 5px;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle .lists .list + .list {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.edu {
   border-radius: 40px 0 0 0;
@@ -195,6 +195,39 @@ a {
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillTitle {
   font-size: 12px;
   font-size: 300;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .toolLists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 10px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .toolLists .toolList {
+  width: 30px;
+  height: 30px;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .toolLists .toolList .toolBox {
+  width: 100%;
+  height: 100%;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .toolLists .toolList .toolBox .toolIcon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("./img/discord-icon.svg") no-repeat center;
+  background-size: 30px !important;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .toolLists .toolList:nth-of-type(2) .toolBox .toolIcon {
+  background: url("./img/figma-icon.svg") no-repeat center;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .toolLists .toolList:nth-of-type(3) .toolBox .toolIcon {
+  background: url("./img/adobexd-icon.svg") no-repeat center;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .toolLists .toolList:nth-of-type(4) .toolBox .toolIcon {
+  background: url("./img/zeplin-icon.svg") no-repeat center;
+}
+.resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .toolLists .toolList:nth-of-type(5) .toolBox .toolIcon {
+  background: url("./img/git-icon.svg") no-repeat center;
 }
 .resume > .inner .resumeBox > .inner .rightSection .rArticle.skill .skillLists {
   display: flex;
@@ -305,12 +338,22 @@ a {
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectList {
   padding-top: 10px;
 }
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .portfolioBlock + .portfolioBlock {
+  padding-top: 20px;
+}
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .proT {
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #605852;
+  margin-bottom: 10px;
+}
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectTitle {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 10px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
+  font-size: 14px;
   margin-bottom: 20px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink {
@@ -318,17 +361,22 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 10px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite,
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectGit,
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF {
+  font-size: 14px;
   position: relative;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectGit a,
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
   display: block;
   color: #06278b;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
+.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectGit::after,
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
   position: absolute;
   left: 0;
@@ -337,9 +385,6 @@ a {
   width: 100%;
   height: 1px;
   background-color: #06278b;
-}
-.resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF {
-  margin-left: 16px;
 }
 .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience {
   background: rgb(255, 238, 213);
@@ -491,13 +536,9 @@ a {
     font-size: 12px;
   }
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectGit a,
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
-    color: #196da6;
     font-size: 12px;
-  }
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
-    background-color: #196da6;
   }
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList .exbox {
     flex-direction: column;
@@ -625,13 +666,9 @@ a {
     font-size: 12px;
   }
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectGit a,
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
-    color: #196da6;
     font-size: 10px;
-  }
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
-    background-color: #196da6;
   }
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList {
     padding-top: 20px;
@@ -769,17 +806,11 @@ a {
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectTitle {
     font-size: 14px;
   }
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .proT {
     font-size: 12px;
   }
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
-    color: #196da6;
+  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
     font-size: 10px;
-  }
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
-    background-color: #196da6;
   }
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList {
     padding-top: 20px;
@@ -910,21 +941,6 @@ a {
   }
   .resume > .inner .resumeBox > .inner .leftSection .lArticle .articleTitle > h2 {
     font-size: 16px;
-  }
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectTitle {
-    font-size: 14px;
-  }
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectDesc {
-    font-size: 12px;
-  }
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite a,
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF a {
-    color: #196da6;
-    font-size: 10px;
-  }
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectSite::after,
-  .resume > .inner .resumeBox > .inner .leftSection .lArticle.project .projectLink .projectPDF::after {
-    background-color: #196da6;
   }
   .resume > .inner .resumeBox > .inner .leftSection .lArticle.experience .exList {
     padding-top: 20px;

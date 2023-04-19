@@ -156,7 +156,7 @@ a {
 								}
 							}
 							.list + .list {
-								padding-top: 30px;
+								padding-top: 20px;
 							}
 						}
 						&.edu {
@@ -200,6 +200,40 @@ a {
 								font-size: 12px;
 								font-size: 300;
 							}
+							.toolLists {
+								display: flex;
+								flex-wrap: wrap;
+								gap: 10px;
+								padding-top: 10px;
+								.toolList {
+									width: 30px;
+									height: 30px;
+
+									.toolBox {
+										width: 100%;
+										height: 100%;
+										.toolIcon {
+											display: block;
+											width: 100%;
+											height: 100%;
+											background: url('./img/discord-icon.svg') no-repeat center;
+											background-size: 30px !important;
+										}
+									}
+									&:nth-of-type(2) .toolBox .toolIcon {
+										background: url('./img/figma-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(3) .toolBox .toolIcon {
+										background: url('./img/adobexd-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(4) .toolBox .toolIcon {
+										background: url('./img/zeplin-icon.svg') no-repeat center;
+									}
+									&:nth-of-type(5) .toolBox .toolIcon {
+										background: url('./img/git-icon.svg') no-repeat center;
+									}
+								}
+							}
 							.skillLists {
 								display: flex;
 								flex-wrap: wrap;
@@ -208,7 +242,7 @@ a {
 								.skillList {
 									width: 30px;
 									height: 30px;
-									
+
 									.skillBox {
 										width: 100%;
 										height: 100%;
@@ -313,12 +347,22 @@ a {
 							.projectList {
 								padding-top: 10px;
 							}
+							.portfolioBlock + .portfolioBlock {
+								padding-top: 20px;
+							}
+							.proT {
+								font-size: 16px;
+								font-weight: 400;
+								border-bottom: 1px solid #605852;
+								margin-bottom: 10px;
+							}
 							.projectTitle {
 								font-weight: 600;
 								font-size: 20px;
 								margin-bottom: 10px;
 							}
 							.projectDesc {
+								font-size: 14px;
 								margin-bottom: 20px;
 							}
 							.projectLink {
@@ -326,8 +370,11 @@ a {
 								display: flex;
 								align-items: center;
 								justify-content: flex-end;
+								gap: 10px;
 								.projectSite,
+								.projectGit,
 								.projectPDF {
+									font-size: 14px;
 									position: relative;
 									a {
 										display: block;
@@ -342,9 +389,6 @@ a {
 										height: 1px;
 										background-color: #06278b;
 									}
-								}
-								.projectPDF {
-									margin-left: 16px;
 								}
 							}
 						}
@@ -398,7 +442,6 @@ a {
 													&:hover a {
 														color: #196da6;
 														border-bottom: 1px solid #196da6;
-													
 													}
 												}
 												.proText {
@@ -411,7 +454,6 @@ a {
 													padding-top: 10px;
 												}
 												.proSite {
-													
 													border-bottom: 1px solid #605852;
 												}
 											}
@@ -532,13 +574,12 @@ a {
 								}
 								.projectLink {
 									.projectSite,
+									.projectGit,
 									.projectPDF {
 										a {
-											color: #196da6;
 											font-size: 12px;
 										}
 										&::after {
-											background-color: #196da6;
 										}
 									}
 								}
@@ -702,13 +743,10 @@ a {
 								}
 								.projectLink {
 									.projectSite,
+									.projectGit,
 									.projectPDF {
 										a {
-											color: #196da6;
 											font-size: 10px;
-										}
-										&::after {
-											background-color: #196da6;
 										}
 									}
 								}
@@ -795,7 +833,7 @@ a {
 					.rightSection {
 						width: 100%;
 						margin-right: 0;
-						
+
 						.rArticle {
 							padding: 30px 20px;
 							.articleTitle {
@@ -872,20 +910,11 @@ a {
 								.projectTitle {
 									font-size: 14px;
 								}
-								.projectDesc {
+								.proT {
 									font-size: 12px;
 								}
-								.projectLink {
-									.projectSite,
-									.projectPDF {
-										a {
-											color: #196da6;
-											font-size: 10px;
-										}
-										&::after {
-											background-color: #196da6;
-										}
-									}
+								.projectDesc {
+									font-size: 10px;
 								}
 							}
 							&.experience {
@@ -951,6 +980,7 @@ a {
 							font-size: 14px;
 							margin-bottom: 5;
 						}
+
 						.profileTxt {
 							margin-top: 5px;
 							font-size: 10px;
@@ -1040,24 +1070,6 @@ a {
 								}
 							}
 							&.project {
-								.projectTitle {
-									font-size: 14px;
-								}
-								.projectDesc {
-									font-size: 12px;
-								}
-								.projectLink {
-									.projectSite,
-									.projectPDF {
-										a {
-											color: #196da6;
-											font-size: 10px;
-										}
-										&::after {
-											background-color: #196da6;
-										}
-									}
-								}
 							}
 							&.experience {
 								.exList {

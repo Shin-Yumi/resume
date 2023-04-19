@@ -112,9 +112,33 @@
                   <li class="list">
                     <div class="box">
                       <p class="skillEnv">협업 툴</p>
-                      <p class="skillTitle">community: discord, slick</p>
-                      <p class="skillTitle">design: figma, xd, zeplin</p>
-                      <p class="skillTitle">develop: gitlab, github</p>
+                      <ul class="toolLists">
+                        <li class="toolList">
+                          <div class="toolBox">
+                            <i class="toolIcon"></i>
+                          </div>
+                        </li>
+                        <li class="toolList">
+                          <div class="toolBox">
+                            <i class="toolIcon"></i>
+                          </div>
+                        </li>
+                        <li class="toolList">
+                          <div class="toolBox">
+                            <i class="toolIcon"></i>
+                          </div>
+                        </li>
+                        <li class="toolList">
+                          <div class="toolBox">
+                            <i class="toolIcon"></i>
+                          </div>
+                        </li>
+                        <li class="toolList">
+                          <div class="toolBox">
+                            <i class="toolIcon"></i>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
                   </li>
                   <li class="list">
@@ -308,7 +332,7 @@
                             </p>
                           </li>
                           <li class="exProList">
-                            <p class="exProTitle "><a href="https://www.dplot.co.kr/shop">Valbers</a> </p>
+                            <p class="exProTitle "><a href="http://valbers.co.kr/">Valbers</a> </p>
 
                             <p class="proTools proText">협업툴: photoshop, 구글드라이브, github</p>
                             <p class="proSkill proText">사용 기술: Html, scss, vanila.js, jquery, Gulp</p>
@@ -320,7 +344,6 @@
                               1. 기획 및 디자인<br>
                               2. 전체 page publishing & script 작업<br>
                               3. gulp를 사용하여 build,유지보수 및 재사용을 위해 컴포넌트 작업<br>
-                              ...그 외
                             </p>
 
                           </li>
@@ -343,51 +366,57 @@
                 <ul class="lists projectLists">
                   <li class="list projectList">
                     <div class="box projectList">
-                      <p class="projectTitle">React Portfolio</p>
-                      <p class="projectDesc">
-                        Html로 만든 portfolio를 React 17버전으로 마이그레이션 하였습니다.<br />Redux,Redux-Saga로 양방향 데이터와
-                        api 요청 관리를 하였으며 게시판 데이터를 localstorage에 저장하여 CRUD기능을 구현한 사이트입니다<br />
-                        github을 사용하여 프로젝트를 관리하고 notion으로 일정 관리를 하였습니다.
-                      </p>
-                      <div class="projectLink">
-                        <p class="projectSite">
-                          <a href="https://shin-yumi.github.io/React-portfolio/#/">사이트 바로가기</a>
+                      <p class="projectTitle">Portfolio</p>
+                      <div class="portfolioBlock">
+                        <p class="proT">React ver</p>
+                        <p class="projectDesc">
+                          Html로 만든 portfolio를 React 17버전으로 변경하였습니다.<br>
+                          Redux,Redux-Saga로 양방향 데이터와
+                          api 요청 관리를 하였으며 게시판 데이터를 localstorage에 저장하여 CRUD기능을 구현한 사이트입니다<br />
+                          github을 사용하여 프로젝트를 관리하고 notion으로 일정 관리를 하였습니다.
                         </p>
-                        <p class="projectPDF">
-                          <a href="https://github.com/Shin-Yumi/resume/raw/main/file/portfolio-sheet.pdf" download>
-                            작업 가이드 다운로드
-                          </a>
-                        </p>
+                        <div class="projectLink">
+                          <p class="projectSite">
+                            <a href="https://shin-yumi.github.io/React-portfolio/#/">사이트 바로가기</a>
+                          </p>
+                          <p class="projectGit">
+                            <a href="https://github.com/Shin-Yumi/React-portfolio">깃헙 저장소</a>
+                          </p>
+                          <p class="projectPDF">
+                            <a href="https://github.com/Shin-Yumi/resume/raw/main/file/portfolio-sheet.pdf" download>
+                              작업 가이드
+                            </a>
+                          </p>
+                        </div>
                       </div>
-
+                      <div class="portfolioBlock">
+                        <p class="proT">Html ver</p>
+                        <p class="projectDesc">
+                          html, scss, javascript를 이용하여 제작한 포트폴리오 입니다.<br />
+                          순수 javascript로만 구현하였으며 디바이스 대응을 위해 반응형 스타일을 적용하였습니다.
+                        </p>
+                        <div class="projectLink">
+                          <p class="projectSite">
+                            <a href="https://shin-yumi.github.io/frontend-portfolio/main.html">사이트 바로가기</a>
+                          </p>
+                          <p class="projectGit">
+                            <a href="https://github.com/Shin-Yumi/frontend-portfolio">깃헙 저장소</a>
+                          </p>
+                          <p class="projectPDF">
+                            <a href="https://github.com/Shin-Yumi/resume/raw/main/file/html-sheet.pdf" download>
+                              작업 가이드
+                            </a>
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li class="list projectList">
                     <div class="box projectList">
-                      <p class="projectTitle">Html version Portfolio</p>
+                      <p class="projectTitle">Netflix Clone(Next.js)</p>
                       <p class="projectDesc">
-                        html, scss, javascript를 이용하여 제작한 포트폴리오 입니다.<br />
-                        순수 javascript로만 구현하였으며 디바이스 대응을 위해 반응형 스타일을 적용하였습니다.
-                      </p>
-                      <div class="projectLink">
-                        <p class="projectSite">
-                          <a href="https://shin-yumi.github.io/frontend-portfolio/main.html">사이트 바로가기</a>
-                        </p>
-                        <p class="projectPDF">
-                          <a href="https://github.com/Shin-Yumi/resume/raw/main/file/html-sheet.pdf" download>
-                            작업 가이드 다운로드
-                          </a>
-                        </p>
-                      </div>
-
-                    </div>
-                  </li>
-                  <li class="list projectList">
-                    <div class="box projectList">
-                      <p class="projectTitle">Netflix Clone page (Next.js)</p>
-                      <p class="projectDesc">
-                        Next.js와 typescript를 사용하여 제작한 넷플릭스 클론 페이지입니다.<br />
-                        youtube 강의를 보고 제작하였지만 17 버전으로 제작된 영상과 달리 18버전으로 변경하여 클론 페이지를 만들었습니다.
+                        Next.js와 typescript를 사용하여 제작하였습니다<br>
+                        youtube 강의를 보고 제작하였지만 17 버전으로 제작된 영상과 달리 18버전으로 마이그레이션하여 만들었습니다.<br>
                         recoil을 사용하여 상태관리를 하였으며 tailwind를 적용하여 스타일링하였습니다.
                         github을 통해 프로젝트를 관리하였으며 vercel로 배포하였습니다.
 
@@ -396,34 +425,19 @@
                         <p class="projectSite">
                           <a href="https://nextflix-sigma.vercel.app/">사이트 바로가기</a>
                         </p>
+                        <p class="projectGit">
+                          <a href="https://github.com/Shin-Yumi/nextflix">깃헙 저장소</a>
+                        </p>
+
                         <p class="projectPDF">
                           <a href="https://github.com/Shin-Yumi/resume/raw/main/file/netflix-sheet.pdf" download>
-                            작업 가이드 다운로드
+                            작업 가이드
                           </a>
                         </p>
                       </div>
 
                     </div>
                   </li>
-                  <!-- <li class="list projectList">
-                    <div class="box projectList">
-                      <p class="projectTitle">NodeExpress, MongoDB로 CRUD 만들기</p>
-                      <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugiat
-                        dignissimos, vero vel praesentium labore quisquam at velit debitis nobis, cum architecto eveniet
-                        animi ad magnam quas. Ratione, molestiae. Debitis!</p>
-                      <div class="projectLink">
-                        <p class="projectSite">
-                          <a href="https://nextflix-sigma.vercel.app/">사이트 바로가기</a>
-                        </p>
-                        <p class="projectPDF">
-                          <a href="file/신유미 포트폴리오 작업 가이드.pdf" download="portfolio 작업 가이드 다운로드">
-                            작업 가이드 다운로드
-                          </a>
-                        </p>
-                      </div>
-
-                    </div>
-                  </li> -->
                 </ul>
 
               </div>
