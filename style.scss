@@ -14,7 +14,7 @@
 body {
 	background: #d5e6f1;
 	margin: 0 auto;
-	padding: 100px;
+	padding: 80px;
 }
 ul,
 li {
@@ -61,6 +61,11 @@ a {
 				.profileTop {
 					width: 100%;
 					margin-bottom: 100px;
+					.subTitle {
+						font-size: 24px;
+						margin-bottom: 20px;
+						color: #06278b;
+					}
 					.name {
 						font-size: 50px;
 						line-height: 1;
@@ -199,6 +204,31 @@ a {
 							.skillTitle {
 								font-size: 12px;
 								font-size: 300;
+							}
+							.devSetLists {
+								display: flex;
+								flex-wrap: wrap;
+								gap: 10px;
+								padding-top: 10px;
+								.devSetList {
+									width: 30px;
+									height: 30px;
+
+									.devSetBox {
+										width: 100%;
+										height: 100%;
+										.devSetIcon {
+											display: block;
+											width: 100%;
+											height: 100%;
+											background: url('./img/vscode-icon.svg') no-repeat center;
+											background-size: 30px !important;
+										}
+									}
+									&:nth-of-type(2) .devSetBox .devSetIcon {
+										background: url('./img/intellij-icon.svg') no-repeat center;
+									}
+								}
 							}
 							.toolLists {
 								display: flex;
@@ -445,7 +475,7 @@ a {
 													}
 												}
 												.proText {
-													font-size: 12px;
+													font-size: 14px;
 												}
 												.proWork {
 													padding-top: 20px;
@@ -492,8 +522,12 @@ a {
 				.profileDesc {
 					width: calc(100% - 350px);
 					.profileTop {
+						margin-bottom: 50px;
+						.subTitle {
+							font-size: 18px;
+						}
 						.name {
-							font-size: 40px;
+							font-size: 38px;
 						}
 						.job {
 							font-size: 20px;
@@ -617,6 +651,9 @@ a {
 	}
 }
 @media screen and (max-width: 798px) {
+	body {
+		padding: 80px 30px;
+	}
 	.resume {
 		padding: 30px;
 		> .inner {
@@ -633,11 +670,15 @@ a {
 					width: calc(100% - 270px);
 					.profileTop {
 						margin-bottom: 20px;
+						.subTitle {
+							font-size: 14px;
+							margin-bottom: 10px;
+						}
 						.name {
 							font-size: 20px;
 						}
 						.job {
-							font-size: 14px;
+							font-size: 12px;
 						}
 					}
 
@@ -782,9 +823,6 @@ a {
 	}
 }
 @media screen and (max-width: 576px) {
-	body {
-		padding: 80px 30px;
-	}
 	.resume {
 		padding: 50px;
 		> .inner {
@@ -802,12 +840,9 @@ a {
 					width: 100%;
 					margin-top: 20px;
 					.profileTop {
-						margin-bottom: 20px;
-						.name {
-							font-size: 20px;
-						}
+						margin-bottom: 10px;
 						.job {
-							font-size: 14px;
+							font-size: 12px;
 						}
 					}
 
