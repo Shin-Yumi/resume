@@ -36,6 +36,7 @@ a {
 		width: 100%;
 		height: 100%;
 		margin: 0 auto;
+		// profile area scss
 		.profile {
 			display: flex;
 			align-items: flex-end;
@@ -117,10 +118,12 @@ a {
 				}
 			}
 		}
+		// resume area scss
 		.resumeBox {
 			padding-top: 50px;
 			> .inner {
 				display: flex;
+				// resume right area scss
 				.rightSection {
 					width: 450px;
 					margin-right: 20px;
@@ -340,6 +343,7 @@ a {
 						margin-top: 20px;
 					}
 				}
+				// resume left area scss
 				.leftSection {
 					width: calc(100% - 470px);
 					.lArticle {
@@ -505,6 +509,7 @@ a {
 	}
 }
 
+// laptop
 @media screen and (max-width: 1024px) {
 	body {
 		padding: 100px 50px;
@@ -650,6 +655,7 @@ a {
 		}
 	}
 }
+// tablet
 @media screen and (max-width: 798px) {
 	body {
 		padding: 80px 30px;
@@ -822,6 +828,7 @@ a {
 		}
 	}
 }
+// mobile
 @media screen and (max-width: 576px) {
 	.resume {
 		padding: 50px;
@@ -982,6 +989,7 @@ a {
 		}
 	}
 }
+// small mobile
 @media screen and (max-width: 425px) {
 	.resume {
 		padding: 30px 20px;
